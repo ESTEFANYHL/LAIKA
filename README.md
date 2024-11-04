@@ -1,2 +1,0 @@
-# PetMOOD
-Proyecto de PetMood

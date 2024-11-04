@@ -1,0 +1,97 @@
+import React from 'react'; 
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
+
+export default function Index() {
+  return (
+    <View style={styles.container}>
+      {/* Título */}
+      <Text style={styles.title}>PETMOOD</Text>
+      {/* Subtítulo */}
+      <Text style={styles.subtitle}>¡CONOCE A TU MASCOTA!</Text>
+      {/* Imagen del icono de la mascota */}
+      <View style={styles.imageContainer}>
+        <Image
+          source={{ uri: 'file:///C:/Users/evano/OneDrive/Escritorio/PETMOOD/LOGOTEM.png' }} // Reemplaza con la ruta de tu imagen local
+          style={styles.image}
+        />
+      </View>
+      {/* Botón de Cuenta */}
+      <TouchableOpacity style={[styles.button, styles.accountButton]}>
+        <Text style={styles.buttonText}>CUENTA</Text>
+      </TouchableOpacity>
+      {/* Botón de Cámara */}
+      <TouchableOpacity style={[styles.button, styles.cameraButton]}>
+        <Text style={styles.buttonText}>CÁMARA</Text>
+      </TouchableOpacity>
+      {/* Aviso de privacidad */}
+      <Text style={styles.privacyText}>AVISO DE PRIVACIDAD</Text>
+      {/* Derechos reservados */}
+      <Text style={styles.footerText}>© PET MOOD 2024. TODOS LOS DERECHOS RESERVADOS.</Text>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#f5f5f5',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+    padding: 20,
+  },
+  title: {
+    fontSize: 40,
+    fontWeight: 'bold',
+    color: '#4a90e2',
+    marginBottom: 5,
+  },
+  subtitle: {
+    fontSize: 20,
+    color: '#4a90e2',
+    marginBottom: 20,
+  },
+  imageContainer: {
+    width: 200,
+    height: 200,
+    borderRadius: 100,
+    borderWidth: 8,
+    borderColor: '#4a90e2',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: 30,
+  },
+  image: {
+    width: 120,
+    height: 120,
+  },
+  button: {
+    borderRadius: 25,
+    paddingVertical: 15,
+    paddingHorizontal: 40,
+    marginVertical: 10,
+    width: '70%',
+    alignItems: 'center',
+  },
+  accountButton: {
+    backgroundColor: '#4a90e2',
+  },
+  cameraButton: {
+    backgroundColor: '#6a1b9a',
+  },
+  buttonText: {
+    color: '#fff',
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
+  privacyText: {
+    fontSize: 16,
+    color: 'gray',
+    textDecorationLine: 'underline',
+  },
+  footerText: {
+    fontSize: 14,
+    color: 'gray',
+    marginTop: 10,
+    textAlign: 'center',
+  },
+});

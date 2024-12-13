@@ -2,7 +2,7 @@ import { Assets as NavigationAssets } from '@react-navigation/elements';
 import { Asset } from 'expo-asset';
 import * as SplashScreen from 'expo-splash-screen';
 import * as React from 'react';
-import { Navigation } from './navigation';
+import { Navigation } from './navigation'; // Este archivo probablemente tiene la configuración de la navegación
 
 Asset.loadAsync([
   ...NavigationAssets,

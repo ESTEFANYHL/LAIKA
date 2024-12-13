@@ -1,16 +1,16 @@
-// Importación de componentes y funciones de React Native
+
 import {
-  View, // Contenedor base similar a un <div> en HTML
-  Text, // Componente para mostrar texto
-  StyleSheet, // Herramienta para definir estilos CSS en React Native
-  Dimensions, // Módulo para obtener las dimensiones de la pantalla actual
-  Animated, // Herramienta para crear animaciones en componentes
-  Easing, // Define el tipo de suavizado para las animaciones
-  Modal, // Componente para mostrar ventanas emergentes modales
-  ScrollView, // Contenedor con desplazamiento para contenido largo
-  Image, // Componente para renderizar imágenes
-  Button, // Componente de botón predefinido
-  TouchableOpacity, // Componente táctil para manejar toques (clics o taps)
+  View, 
+  Text,
+  StyleSheet, 
+  Dimensions, 
+  Animated, 
+  Easing, 
+  Modal, 
+  ScrollView, 
+  Image, 
+  Button, 
+  TouchableOpacity, 
 } from "react-native";
 
 // Importación del hook `useNavigation` para manejar la navegación entre pantallas

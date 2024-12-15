@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "LaikaDev",
+    "slug": "laika-dmfhqeyzutfwraxghpyap",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "scheme": "laikadev",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.lukita23.LaikaDev"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-asset",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#ffffff",
+          "image": "./assets/splash-icon.png"
+        }
+      ],
+      "react-native-edge-to-edge"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "5771b0a9-6ab7-4e20-9a7e-6545e13966bc"
+      }
+    },
+    "owner": "lukita23"
+  }
+}
